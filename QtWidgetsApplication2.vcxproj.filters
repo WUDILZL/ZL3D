@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{2cd122ad-c89e-4cd1-a6fc-a75c761164ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glsl">
+      <UniqueIdentifier>{31ab4828-be5b-4c8a-a5e0-74f23502c988}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\opengl窗口">
+      <UniqueIdentifier>{e4c432d8-1f0f-478f-8a87-e92548b4d810}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="着色器类">
+      <UniqueIdentifier>{5da22525-51c7-4277-8c63-d44b2427dac1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="着色器类\着色器基类">
+      <UniqueIdentifier>{6ed5df12-f84a-4d5f-8236-8e2569ccca20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="三维场景">
+      <UniqueIdentifier>{c276809f-f587-4bbc-86e6-99f01ed515d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="三维场景\透视相机">
+      <UniqueIdentifier>{36bce06b-3a95-494a-a3ff-a98f49bbf0ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="渲染器类">
+      <UniqueIdentifier>{075f1792-1321-40b2-a0d8-c76325a639b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="渲染器类\opengl顶点缓冲">
+      <UniqueIdentifier>{c3a315b0-efa2-48be-8d92-08169d127080}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="着色器类\颜色着色器">
+      <UniqueIdentifier>{d82fec45-2fcc-4bde-a4ef-a77a0c11a0d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="模型架构">
+      <UniqueIdentifier>{f6146fad-56e0-4b32-8349-b6f195b7dee5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="模型架构\索引列表">
+      <UniqueIdentifier>{570953b3-66d2-4162-9e2e-6cfe9f6b3484}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="模型架构\索引列表\索引数据">
+      <UniqueIdentifier>{46877d67-b452-4833-84d3-f42b2c3e9214}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="模型架构\索引列表\索引数据\顶点索引">
+      <UniqueIdentifier>{583b0462-b020-4b5b-baf3-21c067b0e3fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="计算">
+      <UniqueIdentifier>{bad1598f-51f4-4141-b7e5-f75fe72c8ed2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="计算\数据">
+      <UniqueIdentifier>{a4cad7bb-2d7d-49b7-88a0-cda6bf12796b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="三维场景\坐标系">
+      <UniqueIdentifier>{74fe33cc-bd88-4e0c-a61d-3ec94c3147c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="三维场景\物体类">
+      <UniqueIdentifier>{e2a00308-2b4a-44e5-9f67-2bd7cbada337}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="三维场景\工作平面">
+      <UniqueIdentifier>{a1ce62b7-5b41-4c30-8cbe-58b390ce4c5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="三维场景\透视相机\摄像机基类">
+      <UniqueIdentifier>{f3bb16d2-ad77-4a5b-8dc9-70217ae469eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\数据显示窗口">
+      <UniqueIdentifier>{8dc015e9-6e34-4746-b074-a4e9bffcd28c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="三维场景\鼠标键盘信号事件">
+      <UniqueIdentifier>{8e418148-4f39-4069-b388-1cbd94248387}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="三维场景\标准模型">
+      <UniqueIdentifier>{ba579c87-1850-45d4-8b49-d71256af2c74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="三维场景\立方体">
+      <UniqueIdentifier>{2fefc7b2-8a25-4192-91e6-cf71a96f175c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="渲染器类\队列渲染">
+      <UniqueIdentifier>{009f989e-5273-46f0-9796-a3340e4712c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\数据显示窗口\小部件">
+      <UniqueIdentifier>{cb79aeed-a71d-42c4-8f64-8df83531981a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\数据显示窗口\工作平面数据显示">
+      <UniqueIdentifier>{9a5497ba-2adf-4558-8384-60acf491f18b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="三维场景\物体操控">
+      <UniqueIdentifier>{e5d0019e-79a5-4bb9-9787-5528227dfbfc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="QtWidgetsApplication2.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtMoc Include="QtWidgetsApplication2.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClCompile Include="QtWidgetsApplication2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ALL_UI.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="MyOpenGLWidegets.cpp">
+      <Filter>ui\opengl窗口</Filter>
+    </ClCompile>
+    <ClCompile Include="My_Shader.cpp">
+      <Filter>着色器类\着色器基类</Filter>
+    </ClCompile>
+    <ClCompile Include="My_Camera.cpp">
+      <Filter>三维场景\透视相机</Filter>
+    </ClCompile>
+    <ClCompile Include="Vertex_buffer.cpp">
+      <Filter>渲染器类\opengl顶点缓冲</Filter>
+    </ClCompile>
+    <ClCompile Include="Color_shader.cpp">
+      <Filter>着色器类\颜色着色器</Filter>
+    </ClCompile>
+    <ClCompile Include="Map_3D.cpp">
+      <Filter>三维场景</Filter>
+    </ClCompile>
+    <ClCompile Include="Model_FWK.cpp">
+      <Filter>模型架构</Filter>
+    </ClCompile>
+    <ClCompile Include="Vertex_index.cpp">
+      <Filter>模型架构\索引列表\索引数据\顶点索引</Filter>
+    </ClCompile>
+    <ClCompile Include="Index_data.cpp">
+      <Filter>模型架构\索引列表\索引数据</Filter>
+    </ClCompile>
+    <ClCompile Include="Index_list.cpp">
+      <Filter>模型架构\索引列表</Filter>
+    </ClCompile>
+    <ClCompile Include="数据\RGB.cpp">
+      <Filter>计算\数据</Filter>
+    </ClCompile>
+    <ClCompile Include="数据\包围盒.cpp">
+      <Filter>计算\数据</Filter>
+    </ClCompile>
+    <ClCompile Include="数据\多重计算.cpp">
+      <Filter>计算\数据</Filter>
+    </ClCompile>
+    <ClCompile Include="数据\计算.cpp">
+      <Filter>计算\数据</Filter>
+    </ClCompile>
+    <ClCompile Include="数据\矩阵4X4.cpp">
+      <Filter>计算\数据</Filter>
+    </ClCompile>
+    <ClCompile Include="数据\视图结构.cpp">
+      <Filter>计算\数据</Filter>
+    </ClCompile>
+    <ClCompile Include="数据\四元数.cpp">
+      <Filter>计算\数据</Filter>
+    </ClCompile>
+    <ClCompile Include="数据\向量二维.cpp">
+      <Filter>计算\数据</Filter>
+    </ClCompile>
+    <ClCompile Include="数据\向量三维.cpp">
+      <Filter>计算\数据</Filter>
+    </ClCompile>
+    <ClCompile Include="数据\向量四维.cpp">
+      <Filter>计算\数据</Filter>
+    </ClCompile>
+    <ClCompile Include="Line_seg.cpp">
+      <Filter>计算\数据</Filter>
+    </ClCompile>
+    <ClCompile Include="Coord_system.cpp">
+      <Filter>三维场景\坐标系</Filter>
+    </ClCompile>
+    <ClCompile Include="Model_object.cpp">
+      <Filter>三维场景\物体类</Filter>
+    </ClCompile>
+    <ClCompile Include="Working_plane.cpp">
+      <Filter>三维场景\工作平面</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera_base.cpp">
+      <Filter>三维场景\透视相机\摄像机基类</Filter>
+    </ClCompile>
+    <ClCompile Include="Model_data.cpp">
+      <Filter>ui\数据显示窗口</Filter>
+    </ClCompile>
+    <ClCompile Include="Mouse_Key.cpp">
+      <Filter>三维场景\鼠标键盘信号事件</Filter>
+    </ClCompile>
+    <ClCompile Include="射线结构.cpp">
+      <Filter>计算\数据</Filter>
+    </ClCompile>
+    <ClCompile Include="Standard_model.cpp">
+      <Filter>三维场景\标准模型</Filter>
+    </ClCompile>
+    <ClCompile Include="Cube.cpp">
+      <Filter>三维场景\立方体</Filter>
+    </ClCompile>
+    <ClCompile Include="Queue.cpp">
+      <Filter>渲染器类\队列渲染</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\Coord_data.cpp">
+      <Filter>ui\数据显示窗口\小部件</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\Render_state_data.cpp">
+      <Filter>ui\数据显示窗口\小部件</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\ZLSlider.cpp">
+      <Filter>ui\数据显示窗口\小部件</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\Tree_list.cpp">
+      <Filter>ui\数据显示窗口\小部件</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\ZL_TreeView.cpp">
+      <Filter>ui\数据显示窗口\小部件</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\Color_widget.cpp">
+      <Filter>ui\数据显示窗口\小部件</Filter>
+    </ClCompile>
+    <ClCompile Include="Object_control.cpp">
+      <Filter>三维场景\物体操控</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lifangtidingdian.vs">
+      <Filter>glsl</Filter>
+    </None>
+    <None Include="pian.fs">
+      <Filter>glsl</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="ALL_UI.h">
+      <Filter>ui</Filter>
+    </QtMoc>
+    <QtMoc Include="MyOpenGLWidegets.h">
+      <Filter>ui\opengl窗口</Filter>
+    </QtMoc>
+    <QtMoc Include="Model_data.h">
+      <Filter>ui\数据显示窗口</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\Coord_data.h">
+      <Filter>ui\数据显示窗口\小部件</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\Render_state_data.h">
+      <Filter>ui\数据显示窗口\小部件</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\ZLSlider.h">
+      <Filter>ui\数据显示窗口\小部件</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\Tree_list.h">
+      <Filter>ui\数据显示窗口\小部件</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\ZL_TreeView.h">
+      <Filter>ui\数据显示窗口\小部件</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\Color_widget.h">
+      <Filter>ui\数据显示窗口\小部件</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="OPenGl_Link.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="My_Shader.h">
+      <Filter>着色器类\着色器基类</Filter>
+    </ClInclude>
+    <ClInclude Include="My_Camera.h">
+      <Filter>三维场景\透视相机</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex_buffer.h">
+      <Filter>渲染器类\opengl顶点缓冲</Filter>
+    </ClInclude>
+    <ClInclude Include="Color_shader.h">
+      <Filter>着色器类\颜色着色器</Filter>
+    </ClInclude>
+    <ClInclude Include="Map_3D.h">
+      <Filter>三维场景</Filter>
+    </ClInclude>
+    <ClInclude Include="Model_FWK.h">
+      <Filter>模型架构</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex_index.h">
+      <Filter>模型架构\索引列表\索引数据\顶点索引</Filter>
+    </ClInclude>
+    <ClInclude Include="Index_data.h">
+      <Filter>模型架构\索引列表\索引数据</Filter>
+    </ClInclude>
+    <ClInclude Include="Index_list.h">
+      <Filter>模型架构\索引列表</Filter>
+    </ClInclude>
+    <ClInclude Include="数据\RGB.h">
+      <Filter>计算\数据</Filter>
+    </ClInclude>
+    <ClInclude Include="数据\包围盒.h">
+      <Filter>计算\数据</Filter>
+    </ClInclude>
+    <ClInclude Include="数据\多重计算.h">
+      <Filter>计算\数据</Filter>
+    </ClInclude>
+    <ClInclude Include="数据\计算.h">
+      <Filter>计算\数据</Filter>
+    </ClInclude>
+    <ClInclude Include="数据\矩阵4X4.h">
+      <Filter>计算\数据</Filter>
+    </ClInclude>
+    <ClInclude Include="数据\视图结构.h">
+      <Filter>计算\数据</Filter>
+    </ClInclude>
+    <ClInclude Include="数据\四元数.h">
+      <Filter>计算\数据</Filter>
+    </ClInclude>
+    <ClInclude Include="数据\向量二维.h">
+      <Filter>计算\数据</Filter>
+    </ClInclude>
+    <ClInclude Include="数据\向量三维.h">
+      <Filter>计算\数据</Filter>
+    </ClInclude>
+    <ClInclude Include="数据\向量四维.h">
+      <Filter>计算\数据</Filter>
+    </ClInclude>
+    <ClInclude Include="Line_seg.h">
+      <Filter>计算\数据</Filter>
+    </ClInclude>
+    <ClInclude Include="Coord_system.h">
+      <Filter>三维场景\坐标系</Filter>
+    </ClInclude>
+    <ClInclude Include="Model_object.h">
+      <Filter>三维场景\物体类</Filter>
+    </ClInclude>
+    <ClInclude Include="Working_plane.h">
+      <Filter>三维场景\工作平面</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera_base.h">
+      <Filter>三维场景\透视相机\摄像机基类</Filter>
+    </ClInclude>
+    <ClInclude Include="Mouse_Key.h">
+      <Filter>三维场景\鼠标键盘信号事件</Filter>
+    </ClInclude>
+    <ClInclude Include="射线结构.h">
+      <Filter>计算\数据</Filter>
+    </ClInclude>
+    <ClInclude Include="Standard_model.h">
+      <Filter>三维场景\标准模型</Filter>
+    </ClInclude>
+    <ClInclude Include="Cube.h">
+      <Filter>三维场景\立方体</Filter>
+    </ClInclude>
+    <ClInclude Include="Queue.h">
+      <Filter>渲染器类\队列渲染</Filter>
+    </ClInclude>
+    <ClInclude Include="Object_control.h">
+      <Filter>三维场景\物体操控</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

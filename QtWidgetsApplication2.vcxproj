@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A7853813-B754-42F9-8938-02365B0DAEF7}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0.22621.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0.22621.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>5.14.2_msvc2017_64</QtInstall>
+    <QtModules>core;opengl;gui;widgets;openglextensions</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>6.5.3_msvc2019_64</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <IncludePath>E:\VS VC WD\xiangmu\opengl zhuanyon\xing_qt5142\QtWidgetsApplication2\ui;E:\VS VC WD\openg_ku\glm-master\glm;E:\VS VC WD\xiangmu\opengl zhuanyon\xing_qt5142\QtWidgetsApplication2\数据;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Camera_base.cpp" />
+    <ClCompile Include="Color_shader.cpp" />
+    <ClCompile Include="Coord_system.cpp" />
+    <ClCompile Include="Cube.cpp" />
+    <ClCompile Include="Index_data.cpp" />
+    <ClCompile Include="Index_list.cpp" />
+    <ClCompile Include="Line_seg.cpp" />
+    <ClCompile Include="Map_3D.cpp" />
+    <ClCompile Include="Model_data.cpp" />
+    <ClCompile Include="Model_FWK.cpp" />
+    <ClCompile Include="Model_object.cpp" />
+    <ClCompile Include="Mouse_Key.cpp" />
+    <ClCompile Include="Object_control.cpp" />
+    <ClCompile Include="Queue.cpp" />
+    <ClCompile Include="Standard_model.cpp" />
+    <ClCompile Include="ui\Color_widget.cpp" />
+    <ClCompile Include="ui\Coord_data.cpp" />
+    <ClCompile Include="ui\Render_state_data.cpp" />
+    <ClCompile Include="ui\Tree_list.cpp" />
+    <ClCompile Include="ui\ZLSlider.cpp" />
+    <ClCompile Include="ui\ZL_TreeView.cpp" />
+    <ClCompile Include="Vertex_buffer.cpp" />
+    <ClCompile Include="Vertex_index.cpp" />
+    <ClCompile Include="Working_plane.cpp" />
+    <ClCompile Include="射线结构.cpp" />
+    <ClCompile Include="数据\RGB.cpp" />
+    <ClCompile Include="数据\包围盒.cpp" />
+    <ClCompile Include="数据\向量三维.cpp" />
+    <ClCompile Include="数据\向量二维.cpp" />
+    <ClCompile Include="数据\向量四维.cpp" />
+    <ClCompile Include="数据\四元数.cpp" />
+    <ClCompile Include="数据\多重计算.cpp" />
+    <ClCompile Include="数据\矩阵4X4.cpp" />
+    <ClCompile Include="数据\视图结构.cpp" />
+    <ClCompile Include="数据\计算.cpp" />
+    <QtRcc Include="QtWidgetsApplication2.qrc" />
+    <QtMoc Include="QtWidgetsApplication2.h" />
+    <ClCompile Include="ALL_UI.cpp" />
+    <ClCompile Include="MyOpenGLWidegets.cpp" />
+    <ClCompile Include="My_Camera.cpp" />
+    <ClCompile Include="My_Shader.cpp" />
+    <ClCompile Include="QtWidgetsApplication2.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lifangtidingdian.vs" />
+    <None Include="pian.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="ALL_UI.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Camera_base.h" />
+    <ClInclude Include="Color_shader.h" />
+    <ClInclude Include="Coord_system.h" />
+    <ClInclude Include="Cube.h" />
+    <ClInclude Include="Index_data.h" />
+    <ClInclude Include="Index_list.h" />
+    <ClInclude Include="Line_seg.h" />
+    <ClInclude Include="Map_3D.h" />
+    <QtMoc Include="Model_data.h" />
+    <ClInclude Include="Model_FWK.h" />
+    <ClInclude Include="Model_object.h" />
+    <ClInclude Include="Mouse_Key.h" />
+    <ClInclude Include="My_Camera.h" />
+    <ClInclude Include="My_Shader.h" />
+    <ClInclude Include="Object_control.h" />
+    <ClInclude Include="Queue.h" />
+    <ClInclude Include="Standard_model.h" />
+    <QtMoc Include="ui\Coord_data.h" />
+    <QtMoc Include="ui\Render_state_data.h" />
+    <QtMoc Include="ui\ZLSlider.h" />
+    <QtMoc Include="ui\Tree_list.h" />
+    <QtMoc Include="ui\ZL_TreeView.h" />
+    <QtMoc Include="ui\Color_widget.h" />
+    <ClInclude Include="Vertex_buffer.h" />
+    <ClInclude Include="Vertex_index.h" />
+    <ClInclude Include="Working_plane.h" />
+    <ClInclude Include="射线结构.h" />
+    <ClInclude Include="数据\RGB.h" />
+    <ClInclude Include="数据\包围盒.h" />
+    <ClInclude Include="数据\向量三维.h" />
+    <ClInclude Include="数据\向量二维.h" />
+    <ClInclude Include="数据\向量四维.h" />
+    <ClInclude Include="数据\四元数.h" />
+    <ClInclude Include="数据\多重计算.h" />
+    <ClInclude Include="数据\矩阵4X4.h" />
+    <ClInclude Include="数据\视图结构.h" />
+    <ClInclude Include="数据\计算.h" />
+    <QtMoc Include="MyOpenGLWidegets.h" />
+    <ClInclude Include="OPenGl_Link.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
